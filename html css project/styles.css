@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  nav {
+    background-color: #f5f5f5;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    position: relative;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  nav ul li:hover > a {
+    background-color: #ccc;
+  }
+  
+  nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #f5f5f5;
+    padding: 0;
+  }
+  
+  nav ul li:hover > ul {
+    display: block;
+  }
+  
+  nav ul li ul li {
+    width: 200px;
+  }
+  
+  .image-animation {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .image-animation img {
+    border: 2px solid steelblue;
+    margin: 10px;
+    animation: slide 10s infinite;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-200%);
+    }
+    75% {
+      transform: translateX(-300%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .product-section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .product {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .product:hover {
+    transform: scale(1.05);
+  }
+  
+  .add-to-cart {
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  }
+  
+  .add-to-cart:hover {
+    background-color: rgb(250, 234, 230);
+    border-color: rgb(0, 255, 76);
+  }
+  
+  .form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  form {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 400px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  .button-container {
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    margin: 5px;
+  }
+  
+  .fixed-image {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 200px;
+    height: 200px;
+  }
+  

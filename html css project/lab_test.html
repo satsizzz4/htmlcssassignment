@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Pharmacy</h1>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li>
+        <a href="#">Our Medicines</a>
+        <ul>
+          <li><a href="#">Fever</a></li>
+          <li><a href="#">Muscle Pains</a></li>
+          <li><a href="#">Cold &amp; Cough</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Health Care</a>
+        <ul>
+          <li><a href="#">Baby Care</a></li>
+          <li><a href="#">Skin Care</a></li>
+          <li><a href="#">Home Care</a></li>
+          <li><a href="#">Personal Care</a></li>
+          <li><a href="#">Pet Care</a></li>
+        </ul>
+      </li>
+      <li><a href="lab_test.html">Lab Test</a></li>
+    </ul>
+  </nav>
+  
+  <section class="form-section">
+    <form id="lab-test-form">
+      <label for="full-name">Full Name</label>
+      <input type="text" id="full-name" required>
+      
+      <label for="patient-id">Patient ID</label>
+      <input type="text" id="patient-id">
+      
+      <label for="contact-number">Contact Number</label>
+      <input type="tel" id="contact-number" required>
+      
+      <label for="email">Email ID</label>
+      <input type="email" id="email" required>
+      
+      <label for="house-number">House Number</label>
+      <input type="text" id="house-number" required>
+      
+      <label for="street">Street</label>
+      <input type="text" id="street" required>
+      
+      <label for="area">Area</label>
+      <input type="text" id="area" required>
+      
+      <label for="district">District</label>
+      <select id="district" required>
+        <option value="">Choose</option>
+        <option value="district1">District 1</option>
+        <option value="district2">District 2</option>
+        <option value="district3">District 3</option>
+      </select>
+      
+      <fieldset>
+        <legend>Choose Test Type</legend>
+        <input type="checkbox" id="cbc" name="test-type">
+        <label for="cbc">CBC</label>
+        
+        <input type="checkbox" id="complete-urine" name="test-type">
+        <label for="complete-urine">Complete Urine</label>
+        
+        <input type="checkbox" id="lipid-profile" name="test-type">
+        <label for="lipid-profile">Lipid Profile</label>
+        
+        <input type="checkbox" id="tsh" name="test-type">
+        <label for="tsh">Thyroid Stimulating Hormone(TSH)</label>
+        
+        <input type="checkbox" id="glucose-test" name="test-type">
+        <label for="glucose-test">Glucose Test</label>
+        
+        <p class="error" id="test-type-error"></p>
+      </fieldset>
+      
+      <label for="hard-copy">Do you want a hard copy of the report?</label>
+      <select id="hard-copy" required>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+      
+      <label for="date">Select Your Comfortable Date</label>
+      <input type="date" id="date" required>
+      
+      <label for="time">Select Your Comfortable Time</label>
+      <input type="time" id="time" required>
+      
+      <div class="button-container">
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    
+    <img src="lab-test.jpg" alt="Image" class="fixed-image">
+  </section>
+  
+  <footer>
+    <p>&copy; All rights reserved. Only for demonstration purposes.</p>
+  </footer>
+</body>
+</html>
